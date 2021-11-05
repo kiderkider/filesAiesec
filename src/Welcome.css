@@ -1,0 +1,14 @@
+.arrangement {
+    margin: 6rem;
+}
+.text-style {
+    font-size: 35px;
+    margin-top: 3rem;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+.rectangle {
+    margin-top: 7.5rem;
+    margin-right: 5rem;
+    width: 10%;
+}
