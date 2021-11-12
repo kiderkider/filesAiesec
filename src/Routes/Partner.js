@@ -4,13 +4,13 @@ import OurPartner from "../Components/OurPartner";
 import PartnerW from "../Components/PartnerW";
 
 const Partner = () => {
-    return(
-        <>
-        <NavBar />
-        <PartnerW />
-        <OurPartner />
-        <Footer />
-        </>
-    );
+  return (
+    <>
+      <NavBar />
+      <PartnerW />
+      <OurPartner />
+      <Footer />
+    </>
+  );
 };
 export default Partner;

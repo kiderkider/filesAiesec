@@ -5,14 +5,14 @@ import NavBar from "../Components/Navbar";
 import OurPartner from "../Components/OurPartner";
 
 const OurBlog = () => {
-        return (
-          <>
-          <NavBar />
-          <BlogW />
-          <OurPartner />
-          <LEWA />
-          <Footer/>
-          </>      
-        );
+  return (
+    <>
+      <NavBar />
+      <BlogW />
+      <OurPartner />
+      <LEWA />
+      <Footer />
+    </>
+  );
 };
 export default OurBlog;
