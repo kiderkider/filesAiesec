@@ -1,6 +1,11 @@
+import PartnerWHome from "./PartnerWComponents/PartnerWHome";
+import PartnerList from "./PartnerWComponents/PartnerList";
 const PartnerW = () => {
-    return(
-        <></>
-    );
-}
+  return (
+    <>
+      <PartnerWHome />
+      <PartnerList />
+    </>
+  );
+};
 export default PartnerW;

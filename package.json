@@ -1,5 +1,5 @@
 {
-  "name": "aiesec-site",
+  "name": "aieseccode",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://iamUnkn0wn.github.io/aiesecsite",
@@ -46,5 +46,7 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

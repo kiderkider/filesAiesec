@@ -1,7 +1,16 @@
-import { Container, Row, Col, Nav } from "react-bootstrap";
+import OurEventsItem from "./OurEventsItem";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Alert,
+  Breadcrumb,
+  Card,
+  Form
+} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import OurEventsItem from "./BlogWComponents/OurEventsItem";
-const Suggest = () => {
+const OurEventsList = () => {
   const ourEventsDatas = [
     {
       key: "0",
@@ -17,11 +26,16 @@ const Suggest = () => {
       key: "2",
       image_url: "https://via.placeholder.com/150",
       information: "Lorem ipsum dolor sit amet, consetetur "
+    },
+    {
+      key: "3",
+      image_url: "https://via.placeholder.com/150",
+      information: "Lorem ipsum dolor sit amet, consetetur "
     }
   ];
   return (
-    <>
-      <h1>Suggested for you</h1>
+    <div className="op">
+      <h1>Our Events</h1>
       <Container>
         <Row>
           {ourEventsDatas.map((ourEventsData) => (
@@ -31,7 +45,10 @@ const Suggest = () => {
           ))}
         </Row>
       </Container>
-    </>
+
+      <hr />
+    </div>
   );
 };
-export default Suggest;
+
+export default OurEventsList;

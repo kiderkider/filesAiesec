@@ -1,7 +1,7 @@
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import OurEventsItem from "./BlogWComponents/OurEventsItem";
-const Suggest = () => {
+const Featured = () => {
   const ourEventsDatas = [
     {
       key: "0",
@@ -21,7 +21,7 @@ const Suggest = () => {
   ];
   return (
     <>
-      <h1>Suggested for you</h1>
+      <h1>Featured Events</h1>
       <Container>
         <Row>
           {ourEventsDatas.map((ourEventsData) => (
@@ -34,4 +34,4 @@ const Suggest = () => {
     </>
   );
 };
-export default Suggest;
+export default Featured;
