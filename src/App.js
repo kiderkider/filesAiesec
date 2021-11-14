@@ -16,6 +16,7 @@ function App() {
       <Route path="/events" element={<Events />} />
       <Route path="/offices" element={<Offices />} />
       <Route path="/lc" element={<LC />} />
+      {/* <p>Change tester</p> */}
     </Routes>
   );
 }
