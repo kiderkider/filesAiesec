@@ -1,33 +1,52 @@
-import { Carousel } from 'react-bootstrap';
-import line from '../Images/Path1.svg';
-import global from '../Images/GlobalSlide.svg';
+import { Carousel } from "react-bootstrap";
+import line from "../Images/Path1.svg";
+import global from "../Images/GlobalSlide.svg";
+import regional from "../Images/regional.png";
+import { useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Alert,
+  Breadcrumb,
+  Card,
+  Form
+} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const OurPartner = () => {
-    return (
+  const [partner, setPartner] = useState(true);
+  const onGClickHandler = () => setPartner(true);
+  const onRClickHandler = () => setPartner(false);
+  const onIClickHandler = () => setPartner(!partner);
+  return (
     <>
-               <h2 style={{fontSize: '71px'}}>Our Partner</h2>
-                <img src={line} width="21%" alt ="line" />
+      <h2 style={{ fontSize: "71px" }}>Our Partner</h2>
+      <img src={line} width="21%" alt="line" />
 
-                <h2>Global</h2>
-                <h2>Regional</h2>
-  <Carousel>
-  <Carousel.Item>
-  <img src={global} alt="global" />
-    <Carousel.Caption>
-      
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <p>Show 2</p>
+      <Row>
+        <Col>
+          <h2
+            onClick={onGClickHandler}
+            style={partner ? { color: "red" } : { color: "blue" }}
+          >
+            Global
+          </h2>
+        </Col>
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+        <Col>
+          <h2
+            onClick={onRClickHandler}
+            style={!partner ? { color: "red" } : { color: "blue" }}
+          >
+            Regional
+          </h2>
+        </Col>
+      </Row>
+
+      <img src={partner ? global : regional} onClick={onIClickHandler} />
     </>
-    );
+  );
 };
 export default OurPartner;

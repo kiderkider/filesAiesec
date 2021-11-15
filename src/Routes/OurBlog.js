@@ -7,11 +7,11 @@ import OurPartner from "../Components/OurPartner";
 const OurBlog = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <BlogW />
-      <OurPartner />
+      {/* <OurPartner />
       <LEWA />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
