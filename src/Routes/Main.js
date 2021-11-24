@@ -12,16 +12,16 @@ import Welcome from "../Components/Welcome";
 const Main = () => {
   return (
     <>
-      {/* <NavBar />
+      <NavBar />
       <Welcome />
       <OurFeatures />
       <Popular />
       <Aboutus />
       <OurProduct />
-      <OurOur />  */}
+      <OurOur />
       <OurPartner />
-      {/* <LEWA />
-      <Footer />      */}
+      <LEWA />
+      <Footer />
     </>
   );
 };

@@ -3,40 +3,47 @@ import airplane from '../Images/airplane.svg';
 import Earth from '../Images/hold-world.svg';
 import hotel from '../Images/hotel.svg';
 
+import '../Styles/OurFeatures.css';
+
 const OurFeatures = () => {
     return (
-        <Container fluid>
-        <h5 style={{paddingLeft:'3rem', color:'#477DEE'}}>Our Features</h5>
+        <Container fluid className='pt-5 container-dis'>
+        <h5 className="main-h5">Our Features</h5>
         <Container fluid>
             <Row>
-                <Col xs={1} className="p-5" >
-                  <h3>Explorer Our Features</h3>
+                <Col xs={2} className="pt-5" >
+                  <h2 className="main-h2">Explorer <br /> Our Features</h2>
                 </Col>
 
-                <Col className="text-left" style={{marginLeft: '15rem', paddingLeft : '6rem', paddingRight: '6rem' }} >
+                <Col className="text-left Col-padding" >
                     <Row style={{padding: '3rem'}}>
+                       
                         <Col style={{margin: 'auto 0'}}>
                         <img src={airplane} alt='airplane' />
-                        <div style={{paddingRight: '10rem'}}>
-                        <p style={{color:'#2C3D4F'}}>114</p>
-                        <p style={{color: '#2D3E50', opacity: '84%'}}>Countries & Territories</p>
+                        <div className="stats-div">
+                        <p className="stats">114</p>
+                        <p className="sub-stat">Countries & Territories</p>
                         </div>
                         
                         </Col>
                         
                         <Col style={{margin: 'auto 0'}}>
                         <img src={Earth} alt='earth' />
-                        <div style={{paddingRight: '10rem'}}>
-                        <p style={{color:'#2C3D4F'}}>+ 7,000</p>
-                        <p style={{color: '#2D3E50', opacity: '84%'}}>Partner Organizations</p>
+
+                        <div className="stats-div">
+                        <p className="stats">+ 7,000</p>
+                        <p className="sub-stat">Partner Organizations</p>
+
                         </div>
                         </Col>
                         
                         <Col style={{margin: 'auto 0'}}>
                         <img src={hotel} alt='hotel' />
-                        <div style={{paddingRight: '10rem'}}>
-                        <p style={{color:'#2C3D4F'}}>+ 30,000</p>
-                        <p style={{color: '#2D3E50', opacity: '84%'}}>Experiences Every Year</p>
+
+                        <div className="stats-div" >
+                        <p className="stats">+ 30,000</p>
+                        <p className="sub-stat">Experiences Every Year</p>
+
                         </div>
                         </Col>
                     </Row>
