@@ -1,3 +1,4 @@
+
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import OurEventsItem from "./BlogWComponents/OurEventsItem";
@@ -35,3 +36,4 @@ const Suggest = () => {
   );
 };
 export default Suggest;
+

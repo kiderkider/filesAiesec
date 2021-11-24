@@ -39,7 +39,7 @@ const OurEventsList = () => {
       <Container>
         <Row>
           {ourEventsDatas.map((ourEventsData) => (
-            <Col>
+            <Col key={ourEventsData.key}>
               <OurEventsItem key={ourEventsData.key} {...ourEventsData} />
             </Col>
           ))}

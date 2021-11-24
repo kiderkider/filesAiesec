@@ -48,7 +48,7 @@ const NavBar = () => {
    {/*Second Navbar*/}
  <Navbar className="nuv padd" bg="white" expand="lg">
   <Container fluid>
-  <Navbar.Brand href="/main">
+  <Navbar.Brand href="/aiesecsite">
       <img
         src={aiesecLogo}
         width="60%"

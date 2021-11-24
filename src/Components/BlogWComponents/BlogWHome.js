@@ -1,41 +1,46 @@
 import BlogWItem from "./BlogWItem";
 import { Container, Row, Col, Button, Alert, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-  FaLinkedin
-} from "react-icons/fa";
+import aiesecLogo from "/src/Images/aiesecLogo.svg";
+import instagramIcon from "/src/Images/instagramIcon.svg";
+import facebookIcon from "/src/Images/facebookIcon.svg";
+import youtubeIcon from "/src/Images/youtubeIcon.svg";
+import linkedinIcon from "/src/Images/linkedinIcon.svg";
+import blogBigImg from "/src/Images/blogImages/blogBigImg.svg";
+import blogImg1 from "/src/Images/blogImages/blogImg1.svg";
+import blogImg2 from "/src/Images/blogImages/blogImg2.svg";
+import blogImg3 from "/src/Images/blogImages/blogImg3.svg";
+import "./BlogWHome.css";
 
-const BlogWhome = () => {
+const BlogWhome = (props) => {
   const leftDatas = {
-    key: "0",
-    image_url: "https://via.placeholder.com/150",
+    keye: "0",
+    image_url: blogBigImg,
     information: "Lorem ipsum dolor sit amet, consetetur "
   };
   const rightDatas = [
     {
-      key: "0",
-      image_url: "https://via.placeholder.com/150",
+      keye: "1",
+      image_url: blogImg1,
+      information: "Lorem ipsum dolor sit amet, consetetur ",
+      main_image: blogImg1,
+      title_information: "cultural informational picture",
+      text:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      thumbnail: aiesecLogo
+    },
+    {
+      keye: "2",
+      image_url: blogImg2,
       information: "Lorem ipsum dolor sit amet, consetetur "
     },
     {
-      key: "1",
-      image_url: "https://via.placeholder.com/150",
-      information: "Lorem ipsum dolor sit amet, consetetur "
-    },
-    {
-      key: "2",
-      image_url: "https://via.placeholder.com/150",
-      information: "Lorem ipsum dolor sit amet, consetetur "
-    },
-    {
-      key: "3",
-      image_url: "https://via.placeholder.com/150",
+      keye: "3",
+      image_url: blogImg3,
       information: "Lorem ipsum dolor sit amet, consetetur "
     }
   ];
+
   return (
     <div>
       <h1>Our Blog</h1>
@@ -51,20 +56,28 @@ const BlogWhome = () => {
           <Button>Search</Button>
         </Form>
       </Alert>
-      <div>
-        <FaFacebookSquare />
-        <FaYoutubeSquare />
-        <FaInstagramSquare />
-        <FaLinkedin />
+      <div className="blogWHomeIcons">
+        <img src={facebookIcon} />
+        <img src={youtubeIcon} />
+        <img src={instagramIcon} />
+        <img src={linkedinIcon} />
       </div>
       <Container>
         <Row>
           <Col>
-            <BlogWItem key={leftDatas.key} {...leftDatas} />
+            <BlogWItem
+              key={leftDatas.keye}
+              {...leftDatas}
+              onChange={props.onChange}
+            />
           </Col>
           <Col>
             {rightDatas.map((leftData) => (
-              <BlogWItem key={leftData.key} {...leftData} />
+              <BlogWItem
+                key={leftData.keye}
+                {...leftData}
+                onChange={props.onChange}
+              />
             ))}
           </Col>
         </Row>

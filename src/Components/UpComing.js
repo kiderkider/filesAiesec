@@ -1,7 +1,11 @@
+
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import OurEventsItem from "./BlogWComponents/OurEventsItem";
+import upcomingStyle from './style.css';
+
 const UpComing = () => {
+
   const ourEventsDatas = [
     {
       key: "0",
@@ -63,10 +67,10 @@ const UpComing = () => {
       </Nav>
 
       <Container>
-        <Row>
+        <Row style={{paddingRight: '15rem', marginLeft: '11rem'}}>
           {ourEventsDatas.map((ourEventsData) => (
-            <Col xl-3>
-              <OurEventsItem key={ourEventsData.key} {...ourEventsData} />
+            <Col xl-3 >
+              <OurEventsItem classCondition='upcomingStyle' key={ourEventsData.key} {...ourEventsData} />
             </Col>
           ))}
         </Row>

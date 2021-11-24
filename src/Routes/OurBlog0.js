@@ -4,16 +4,16 @@ import NavBar from "../Components/Navbar";
 import OurEvent from "../Components/OurEvent";
 import OurPartner from "../Components/OurPartner";
 
-const OurBlog1 = () => {
-    return(
-        <>
-        <NavBar />
-        <OurEvent />
-        <OurPartner />
-        <LEWA />
-        <Footer />
-        </>
-    ) ;
+const OurBlog0 = () => {
+  return (
+    <>
+      <NavBar />
+      <OurEvent />
+      <OurPartner />
+      <LEWA />
+      <Footer />
+    </>
+  );
 };
 
-export default OurBlog1;
+export default OurBlog0;
